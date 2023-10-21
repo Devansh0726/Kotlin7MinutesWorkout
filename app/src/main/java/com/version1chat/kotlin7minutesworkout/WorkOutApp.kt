@@ -1,0 +1,10 @@
+package com.version1chat.kotlin7minutesworkout
+
+import android.app.Application
+
+class WorkOutApp: Application() {
+
+    val db: HistoryDatabase by lazy {
+        HistoryDatabase.getInstance(this)
+    }
+}
